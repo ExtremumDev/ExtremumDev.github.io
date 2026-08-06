@@ -1,0 +1,62 @@
+---
+title: Language choice
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор языка / Language</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f7f7f7;
+            margin: 0;
+        }
+        .lang-choice {
+            background: white;
+            padding: 50px 60px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .lang-choice h1 {
+            font-size: 2rem;
+            color: #1e2a4a;
+            margin-bottom: 10px;
+        }
+        .lang-choice p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .lang-choice a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 12px 35px;
+            background: #1e2a4a;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .lang-choice a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(30,42,74,0.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-choice">
+        <h1>🌐</h1>
+        <h1>Choose your language</h1>
+        <p>Выбор языка</p>
+        <a href="/ru/">Русский</a>
+        <a href="/en/">English</a>
+    </div>
+</body>
+</html>

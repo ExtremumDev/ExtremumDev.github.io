@@ -1,0 +1,18 @@
+---
+layout: default-ru
+---
+<div class="post">
+    <h1>{{ page.title }}</h1>
+    <span class="date">{{ page.date | date: "%d.%m.%Y" }}</span>
+    
+    {% assign project = site.projects | where: "project_key", page.project | first %}
+    {% if project %}
+        <p><strong>Проект:</strong> <a href="{{ project.url }}">{{ project.title }}</a></p>
+    {% endif %}
+    
+    <div>
+        {{ content }}
+    </div>
+    
+    <p><a href="/ru/projects/">← Все проекты</a></p>
+</div>

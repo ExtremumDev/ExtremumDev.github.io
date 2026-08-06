@@ -1,0 +1,36 @@
+title: My site
+description: Simple work blog
+url: "https://ExtremumDev.github.io"
+collections:
+  ru_posts:
+    output: true
+    permalink: /ru/posts/:title/
+  en_posts:
+    output: true
+    permalink: /en/posts/:title/
+  en_projects:
+    output: true
+    permalink: /en/projects/:path/
+  ru_projects:
+    output: true
+    permalink: /ru/projects/:title/
+  logs:
+    output: true
+    permalink: /projects/logs/:title/
+
+defaults:
+  - scope:
+      path: "_logs"
+      type: "logs"
+    values:
+      layout: "log"  
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .gitignore
+  - README.md
+  - .jekyll-cache/
+  - .sass-cache/
+  - vendor/
