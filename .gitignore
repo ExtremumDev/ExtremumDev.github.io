@@ -3,4 +3,3 @@ _site/
 .vscode
 *.swp
 *.lock
-!Gemfile.lock
