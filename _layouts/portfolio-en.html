@@ -1,0 +1,21 @@
+---
+layout: default-en
+---
+<div class="portfolio-detail">
+    <h1>{{ page.title }}</h1>
+    
+    {% if page.tags %}
+        <h2>Tags</h2>
+        <div class="tags">
+            {% for tag in page.tags %}
+                <span class="tag">{{ tag | strip }}</span>
+            {% endfor %}
+        </div>
+    {% endif %}
+    
+    <div class="content">
+        {{ content }}
+    </div>
+    
+    <p><a href="/ru/portfolio/">← Back to portfolio</a></p>
+</div>

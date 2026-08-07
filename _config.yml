@@ -1,6 +1,11 @@
-title: My site
+
+plugins:
+  - jekyll-paginate-v2
+  
+title: Personal site
+
 description: Simple work blog
-url: "https://ExtremumDev.github.io"
+url: "https://extremumdev.github.io"
 collections:
   ru_posts:
     output: true
@@ -17,13 +22,27 @@ collections:
   logs:
     output: true
     permalink: /projects/logs/:title/
+  ru_portfolio:
+    output: true
+    permalink: /ru/portfolio/:path/
+  en_portfolio:
+    output: true
+    permalink: /en/portfolio/:path/
 
 defaults:
   - scope:
       path: "_logs"
       type: "logs"
     values:
-      layout: "log"  
+      layout: "log"
+
+pagination:
+  enabled: true
+  per_page: 10
+  title: ':title - страница :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 exclude:
   - Gemfile
