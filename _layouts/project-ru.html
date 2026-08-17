@@ -1,0 +1,21 @@
+---
+layout: default-ru
+---
+{{content}}
+
+<h2>Логи изменений</h2>
+
+{% assign project_logs = site.logs | where: "project_slug", page.project_slug | where: "lang", page.lang | sort: "date" | reverse %}
+
+{% if project_logs.size > 0 %}
+  <ul>
+    {% for log in project_logs %}
+      <li>
+        <strong>{{ log.date | date: "%d.%m.%Y" }}</strong> — 
+        <a href="{{ log.url }}">{{ log.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Логов пока нет.</p>
+{% endif %}

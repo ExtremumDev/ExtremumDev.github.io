@@ -1,5 +1,5 @@
 ---
-layout: default-ru
+layout: project-ru
 title: Транспортный кооператив
 project_slug: university_driver
 lang: ru
@@ -11,25 +11,8 @@ lang: ru
 
 ## Стек технологий
 
-Бэкенд всей системы делаю с помощью Python-фреймворка FastAPI
-Клиентская часть будет в телеграмме(сделаю телеграмм бота на aiogram). Возможно будет веб-версия.
+Бэкенд всей системы делаю с помощью Python-фреймворка Django(и Django Rest)
+Клиентская часть будет в телеграмме в виде мини аппа.
 
 ## Текущий статус / этап
 В разработке, начал серверную часть.
-
-## Логи изменений
-
-{% assign project_logs = site.logs | where: "project_slug", page.project_slug | where: "lang", page.lang | sort: "date" | reverse %}
-
-{% if project_logs.size > 0 %}
-  <ul>
-    {% for log in project_logs %}
-      <li>
-        <strong>{{ log.date | date: "%d.%m.%Y" }}</strong> — 
-        <a href="{{ log.url }}">{{ log.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>Логов пока нет.</p>
-{% endif %}
