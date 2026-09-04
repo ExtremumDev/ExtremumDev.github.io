@@ -3,7 +3,7 @@ title: Шифрование информации внутрь изображен
 description: CLI утилита, позволяющая зашифровать информацию в изображение
 tags: Пет-проект, C, Криптография
 layout: portfolio-ru
-id: 2
+id: 3
 ---
 ## Демонстрация
 [Репозиторий GitHub](https://github.com/ExtremumDev/image_crypto)

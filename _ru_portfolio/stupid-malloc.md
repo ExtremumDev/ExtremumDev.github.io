@@ -3,7 +3,7 @@ title: Кастомный malloc
 description: Собственная реализация malloc на чистом Си
 tags: Пет-проект, C, Системное программирование 
 layout: portfolio-ru
-id: 1
+id: 2
 ---
 ## Демонстрация
 [Репозиторий GitHub](https://github.com/ExtremumDev/stupid_malloc)
