@@ -49,7 +49,7 @@ permalink: /ru/portfolio/
 <h1>Портфолио работ</h1>
 
 <div class="portfolio-grid">
-    {% assign works = site.ru_portfolio | sort: "id" %}
+    {% assign works = site.ru_portfolio | sort: "id", "last" %}
     {% for work in works %}
         <div class="portfolio-card">
             <h3>{{ work.title }}</h3>
