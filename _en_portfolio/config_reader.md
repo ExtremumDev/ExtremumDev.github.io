@@ -2,7 +2,8 @@
 layout: default-en
 title: Config file parser
 project_slug: config
-lang: ru
+tags: C, utils
+lang: en
 ---
 
 ## About project
