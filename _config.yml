@@ -29,13 +29,6 @@ collections:
     output: true
     permalink: /en/portfolio/:path/
 
-defaults:
-  - scope:
-      path: "_logs"
-      type: "logs"
-    values:
-      layout: "log"
-
 pagination:
   enabled: true
   per_page: 10

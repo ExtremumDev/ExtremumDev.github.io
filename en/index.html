@@ -1,11 +1,11 @@
 ---
 layout: default-en
 title: Main
-pagination:
+<!-- pagination:
   enabled: true
   collection: en_posts
   per_page: 3
-  permalink: /page/:num/
+  permalink: /en/page/:num/ -->
 ---
 <h1>Personal site</h1>
 <p>This site is personal portfolio, place to share my projects and ideas about development</p>
@@ -18,9 +18,9 @@ pagination:
 
 <h2>Posts(dev notes)</h2>
 
-{% if paginator.posts.size > 0 %}
+{% if site.en_posts.size > 0 %}
     <ul class="posts-list">
-        {% for post in paginator.posts %}
+        {% for post in site.en_posts %}
             <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
                 <span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
@@ -31,8 +31,8 @@ pagination:
 {% else %}
     <p>There are no posts yet.</p>
 {% endif %}
-
-<!-- Pagination -->
+<!--
+ Pagination
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
     {% if paginator.previous_page %}
@@ -51,4 +51,4 @@ pagination:
 
 <p style="text-align: center; color: #888; font-size: 0.9rem;">
     Page {{ paginator.page }} of {{ paginator.total_pages }}
-</p>
+</p> -->
