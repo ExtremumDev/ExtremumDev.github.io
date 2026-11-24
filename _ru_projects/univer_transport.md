@@ -1,9 +1,8 @@
 ---
 layout: project-ru
 title: Проект внутри университета
-tags: Учебный, Backend, Python, прикладной
 description: Система поиска попутчиков для студентов
-project_slug: university_driver
+project_slug: univer_transport
 lang: ru
 ---
 ## О проекте

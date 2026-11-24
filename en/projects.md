@@ -1,4 +1,5 @@
 
+
 <div class="page-content">
 <p>List of projects I am glad to show to the public</p>
 <p> Each project's page consists of description(it's goal, core and tech stack), links on the project(e.g. repo) and list of logs(posts done by me during the project development. They commit most important changes, decisions or just news about project)</p>
